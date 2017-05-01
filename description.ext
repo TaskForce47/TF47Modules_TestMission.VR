@@ -1,0 +1,13 @@
+class CfgFunctions
+{
+    #include "TF47CoreScripts\CfgFunctions.hpp"
+};
+
+class CfgNotifications
+{
+    #include "TF47CoreScripts\CfgNotifications.hpp"
+};
+class CfgDebriefing
+{
+    #include "TF47CoreScripts\CfgDebriefing.hpp"
+};
