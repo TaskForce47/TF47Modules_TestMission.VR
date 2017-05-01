@@ -1,0 +1,3 @@
+[submodule "TF47Modules/TF47ServicePoint"]
+	path = TF47Modules/TF47ServicePoint
+	url = git@github.com:TheNiner/TF47ServicePoint.git
