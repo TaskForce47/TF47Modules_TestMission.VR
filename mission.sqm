@@ -4,11 +4,17 @@ class Mission
 	addOns[]=
 	{
 		"a3_map_vr",
-		"A3_Soft_F_MRAP_01"
+		"A3_Characters_F",
+		"A3_Armor_F_EPC_MBT_01",
+		"A3_Soft_F_MRAP_01",
+		"A3_Soft_F_Exp_MRAP_01"
 	};
 	addOnsAuto[]=
 	{
+		"A3_Characters_F",
+		"A3_Armor_F_EPC_MBT_01",
 		"A3_Soft_F_MRAP_01",
+		"A3_Soft_F_Exp_MRAP_01",
 		"a3_map_vr"
 	};
 	randomSeed=16229535;
@@ -43,15 +49,51 @@ class Mission
 					position[]={4000.1218,5,4000.3823};
 					id=0;
 					side="WEST";
-					vehicle="B_MRAP_01_hmg_F";
-					player="PLAYER DRIVER";
+					vehicle="B_soldier_AT_F";
+					player="PLAYER COMMANDER";
 					leader=1;
+					rank="CAPTAIN";
 					skill=0.60000002;
-					health=0.55017084;
-					fuel=0.50252455;
-					ammo=0.17495689;
+					init="this moveInDriver tank; ";
 				};
 			};
+		};
+	};
+	class Vehicles
+	{
+		items=3;
+		class Item0
+		{
+			position[]={4006.105,5,4001.2534};
+			id=1;
+			side="EMPTY";
+			vehicle="B_MBT_01_TUSK_F";
+			leader=1;
+			skill=0.60000002;
+			health=0.32980692;
+			fuel=0.50848025;
+			ammo=0.30598417;
+			text="tank";
+			init="this addaction [""Virtual Arsenal"",{[""Open"",true] call BIS_fnc_arsenal}]; " \n "clearMagazineCargoGlobal this; clearWeaponCargoGlobal  this; clearItemCargoGlobal this; ";
+		};
+		class Item1
+		{
+			position[]={3994.0283,5,4001.4375};
+			id=2;
+			side="EMPTY";
+			vehicle="B_MRAP_01_F";
+			leader=1;
+			skill=0.60000002;
+			init="removeAllAssignedItems this;  removeUniform this; removeBackpack this; removeGoggles this; removeHeadgear this; removeAllWeapons  this; removeVest this;";
+		};
+		class Item2
+		{
+			position[]={3998.8218,5,4007.0698};
+			id=3;
+			side="EMPTY";
+			vehicle="B_T_MRAP_01_hmg_F";
+			leader=1;
+			skill=0.60000002;
 		};
 	};
 };
