@@ -2,5 +2,9 @@ class CfgFunctions
 {
     #include "TF47Modules\CfgFunctions.hpp"
 };
+class CfgNotifications
+{
+    #include "TF47Modules\CfgNotifications.hpp"
+};
 
 #include "TF47Modules\CfgDialogs.hpp"

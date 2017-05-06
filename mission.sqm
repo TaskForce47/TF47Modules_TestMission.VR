@@ -72,7 +72,7 @@ class Mission
 			skill=0.60000002;
 			health=0.32980692;
 			fuel=0.50848025;
-			ammo=0.30598417;
+			ammo=0.31193987;
 			text="tank";
 			init="this addaction [""Virtual Arsenal"",{[""Open"",true] call BIS_fnc_arsenal}]; " \n "clearMagazineCargoGlobal this; clearWeaponCargoGlobal  this; clearItemCargoGlobal this; ";
 		};
