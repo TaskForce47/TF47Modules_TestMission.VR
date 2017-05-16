@@ -54,6 +54,7 @@ class Mission
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
+					text="INF";
 					init="this moveInDriver tank; ";
 				};
 			};
