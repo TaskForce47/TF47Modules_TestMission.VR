@@ -97,6 +97,16 @@ class Mission
 			skill=0.60000002;
 		};
 	};
+	class Markers
+	{
+		items=1;
+		class Item0
+		{
+			position[]={3814.0024,5,4170.0576};
+			name="tf47_modules_umenu_ft_marker_start";
+			type="Empty";
+		};
+	};
 };
 class Intro
 {
