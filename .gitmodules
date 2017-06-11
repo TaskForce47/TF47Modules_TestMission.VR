@@ -1,9 +1,9 @@
 [submodule "TF47Modules/TF47ServicePoint"]
 	path = TF47Modules/TF47ServicePoint
-	url = git@github.com:TheNiner/TF47ServicePoint.git
+	url = ../../corescripts/TF47ServicePoint.git
 [submodule "TF47Modules/TF47UMenu"]
 	path = TF47Modules/TF47UMenu
-	url = git@github.com:TheNiner/TF47UMenu.git
+	url = ../../corescripts/TF47UMenu.git
 [submodule "TF47Modules/TF47VehicleSpawner"]
 	path = TF47Modules/TF47VehicleSpawner
-	url = git@github.com:TheNiner/TF47VehicleSpawner.git
+	url = ../../corescripts/TF47VehicleSpawner.git
