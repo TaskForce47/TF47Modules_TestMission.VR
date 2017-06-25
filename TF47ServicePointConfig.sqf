@@ -1,5 +1,7 @@
 #include "TF47Modules\TF47ServicePoint\TF47ServicePointMacros.hpp"
 
+tf47_modules_sp_markers = ["marker_sp"];
+
 SERVICEPOINT_LOADOUT_CONFIG_BEGIN
 
 SERVICEPOINT_LOADOUT_NAME("Basic Loadout")

@@ -99,7 +99,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=2;
+		items=3;
 		class Item0
 		{
 			position[]={3814.0024,5,4170.0576};
@@ -110,7 +110,15 @@ class Mission
 		{
 			position[]={4005.6707,5,4006.8516};
 			name="marker_one";
-			type="Empty";
+			text="VS";
+			type="mil_objective";
+		};
+		class Item2
+		{
+			position[]={4016.29,5,4008.2778};
+			name="marker_sp";
+			text="SP";
+			type="mil_objective";
 		};
 	};
 };
