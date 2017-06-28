@@ -108,10 +108,11 @@ class Mission
 		};
 		class Item1
 		{
-			position[]={4005.6707,5,4006.8516};
+			position[]={4006.1018,5,4014.7915};
 			name="marker_one";
 			text="VS";
-			type="mil_objective";
+			type="mil_arrow";
+			angle=177.25438;
 		};
 		class Item2
 		{
