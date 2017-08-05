@@ -9,6 +9,7 @@ class Mission
 		"A3_Soft_F_MRAP_01",
 		"A3_Soft_F_Exp_MRAP_01",
 		"A3_Characters_F_Patrol",
+		"A3_Air_F_Beta_Heli_Attack_01",
 		"A3_Drones_F_Air_F_Gamma_UAV_02"
 	};
 	addOnsAuto[]=
@@ -18,6 +19,7 @@ class Mission
 		"A3_Armor_F_EPC_MBT_01",
 		"A3_Soft_F_MRAP_01",
 		"A3_Soft_F_Exp_MRAP_01",
+		"A3_Air_F_Beta_Heli_Attack_01",
 		"a3_map_vr"
 	};
 	randomSeed=16229535;
@@ -58,7 +60,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="INF";
-					init="this moveInDriver tank; ";
+					init="this moveInDriver helo; ";
 				};
 			};
 		};
@@ -83,7 +85,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=3;
+		items=4;
 		class Item0
 		{
 			position[]={4006.105,5,4001.2534};
@@ -116,6 +118,15 @@ class Mission
 			vehicle="B_T_MRAP_01_hmg_F";
 			leader=1;
 			skill=0.60000002;
+		};
+		class Item3
+		{
+			position[]={4015.23,5,4008.0869};
+			id=5;
+			side="EMPTY";
+			vehicle="B_Heli_Attack_01_dynamicLoadout_F";
+			skill=0.60000002;
+			text="helo";
 		};
 	};
 	class Markers
