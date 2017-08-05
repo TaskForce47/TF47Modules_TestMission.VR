@@ -22,7 +22,17 @@ _distanceSp = (getMarkerPos  _nearestServicePoint) distance (getpos player);
 if(_distanceVs < 5 && _distanceVs < _distanceSp) then {
 	createDialog "tf47_modules_vs_main_dialog";
 } else {
-	if(_distanceSp < 5 && (vehicle player) != player) then {
+	if(_distanceSp < 5 && ((vehicle player) != player)) then {
+		player setVariable["tf47_modules_sp_vehicle", vehicle player]; 
 		createDialog "tf47_modules_sp_main_dialog";
 	};
+};
+_nearestServicePoint = [tf47_modules_sp_markers, getConnectedUAV player] call 
+	BIS_fnc_nearestPosition;
+
+_distanceDroneSp = (getMarkerPos  _nearestServicePoint) distance (getConnectedUAV player);
+
+if(_distanceDroneSp < 15) then {
+	player setVariable["tf47_modules_sp_vehicle", getConnectedUAV player]; 
+	createDialog "tf47_modules_sp_main_dialog";
 };

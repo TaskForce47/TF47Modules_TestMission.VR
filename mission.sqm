@@ -7,11 +7,14 @@ class Mission
 		"A3_Characters_F",
 		"A3_Armor_F_EPC_MBT_01",
 		"A3_Soft_F_MRAP_01",
-		"A3_Soft_F_Exp_MRAP_01"
+		"A3_Soft_F_Exp_MRAP_01",
+		"A3_Characters_F_Patrol",
+		"A3_Drones_F_Air_F_Gamma_UAV_02"
 	};
 	addOnsAuto[]=
 	{
-		"A3_Characters_F",
+		"A3_Characters_F_Patrol",
+		"A3_Drones_F_Air_F_Gamma_UAV_02",
 		"A3_Armor_F_EPC_MBT_01",
 		"A3_Soft_F_MRAP_01",
 		"A3_Soft_F_Exp_MRAP_01",
@@ -37,7 +40,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=1;
+		items=2;
 		class Item0
 		{
 			side="WEST";
@@ -49,13 +52,31 @@ class Mission
 					position[]={4000.1218,5,4000.3823};
 					id=0;
 					side="WEST";
-					vehicle="B_soldier_AT_F";
+					vehicle="B_Patrol_Soldier_UAV_F";
 					player="PLAYER COMMANDER";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="INF";
 					init="this moveInDriver tank; ";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4020.3271,5,4001.0806};
+					id=1;
+					side="WEST";
+					vehicle="B_UAV_02_dynamicLoadout_F";
+					isUAV=1;
+					leader=1;
+					skill=0.60000002;
 				};
 			};
 		};
@@ -66,7 +87,7 @@ class Mission
 		class Item0
 		{
 			position[]={4006.105,5,4001.2534};
-			id=1;
+			id=2;
 			side="EMPTY";
 			vehicle="B_MBT_01_TUSK_F";
 			leader=1;
@@ -80,7 +101,7 @@ class Mission
 		class Item1
 		{
 			position[]={3994.0283,5,4001.4375};
-			id=2;
+			id=3;
 			side="EMPTY";
 			vehicle="B_MRAP_01_F";
 			leader=1;
@@ -90,7 +111,7 @@ class Mission
 		class Item2
 		{
 			position[]={3998.8218,5,4007.0698};
-			id=3;
+			id=4;
 			side="EMPTY";
 			vehicle="B_T_MRAP_01_hmg_F";
 			leader=1;
