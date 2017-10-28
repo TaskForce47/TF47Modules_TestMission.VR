@@ -16,7 +16,7 @@ VS_CONFIG_BEGIN
 		["B_Heli_Transport_03_unarmed_F"], 2, 100, ["slot1", "slot2"]
 	],
 	[
-		["rhsusf_M1085A1P2_B_D_Medical_fmtv_usarmy", "rhsusf_M1230a1_usarmy_wd"], 2 , 10, []
+		["rhsusf_M1085A1P2_B_D_Medical_fmtv_usarmy", "rhsusf_M1230a1_usarmy_wd", "RHS_UH60M_MEV"], 2 , 10, []
 	]
 ]
 
