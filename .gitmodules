@@ -1,9 +1,9 @@
 [submodule "TF47Modules/TF47ServicePoint"]
 	path = TF47Modules/TF47ServicePoint
-	url = ../../corescripts/TF47ServicePoint.git
+	url = git@github.com:TaskForce47/TF47ServicePoint.git
 [submodule "TF47Modules/TF47UMenu"]
 	path = TF47Modules/TF47UMenu
-	url = ../../corescripts/TF47UMenu.git
+	url = git@github.com:TaskForce47/TF47UMenu.git
 [submodule "TF47Modules/TF47VehicleSpawner"]
 	path = TF47Modules/TF47VehicleSpawner
-	url = ../../corescripts/TF47VehicleSpawner.git
+	url = git@github.com:TaskForce47/TF47VehicleSpawner.git
